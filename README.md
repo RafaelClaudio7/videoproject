@@ -24,6 +24,10 @@ Install videoproject with npm
 
 <img src="/src/assets/landscape.png" height="300px" width="600px">
 
+<hr>
+
+<img src="/src/assets/portrait.png" height="600px" width="300px">
+
 ## Contributors
 
 Contributions are always welcome!
