@@ -3,9 +3,12 @@ import {
   Bottom,
   CloseButton,
   Container,
+  Description,
   ExpandButton,
+  Logo,
   Mid,
   PlayButton,
+  TextContainer,
   Title,
   Top,
   TopContent,
@@ -15,27 +18,38 @@ import {Play, X, CornersOut, Pause} from 'phosphor-react-native';
 interface IControlsProps {
   onClose: () => void;
   isPaused: boolean;
+  isFullScreen: boolean;
   onTogglePause: () => void;
   onToggleFullScreen: () => void;
   title: string;
+  description: string;
+  info: string;
 }
 
 const Controls = ({
   onClose,
   isPaused,
+  isFullScreen,
   onTogglePause,
   onToggleFullScreen,
   title,
+  description,
+  info,
 }: IControlsProps) => {
-  console.log('teste');
   return (
     <Container>
       <Top>
+        <Logo source={require('../../assets/yt.png')} />
         <TopContent>
           <CloseButton onPress={onClose}>
             <X size={20} color={'white'} />
           </CloseButton>
-          <Title>{title}</Title>
+          {isFullScreen ? (
+            <TextContainer>
+              <Title>{title}</Title>
+              <Description>{description + ' - ' + info}</Description>
+            </TextContainer>
+          ) : null}
         </TopContent>
       </Top>
       <Mid>
