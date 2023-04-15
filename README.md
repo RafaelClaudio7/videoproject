@@ -22,7 +22,7 @@ Install videoproject with npm
 
 ## Screenshots
 
-![App Screenshot]('./src/assets/landscape.png')
+<img src="/src/assets/landscape.png" height="300px" width="600px">
 
 ## Contributors
 
