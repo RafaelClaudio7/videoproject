@@ -2,34 +2,32 @@
 
 This project is a video player with custom controls for an future project of youtube clone.
 
-## Instalação
+## Installation
 
-Instale videoproject com npm
+Install videoproject with npm
 
 ```bash
   cd videoproject
   npm install
 ```
 
-## Funcionalidades
+## Functionalities
 
-- Botão para pausar vídeo
-- Modo tela cheia
+- Pause video button
+- Fullscreen mode
 
-## Stack utilizada
+## Stack
 
 **Front-end:** React-native
 
 ## Screenshots
 
-![App Screenshot]('src/assets/landscape.png')
+![App Screenshot]('./src/assets/landscape.png')
 
-![App Screenshot]('src/assets/portrait.png')
+## Contributors
 
-## Contribuindo
+Contributions are always welcome!
 
-Contribuições são sempre bem-vindas!
-
-## Autores
+## Author
 
 - [@RafaelClaudio7](https://github.com/RafaelClaudio7)
