@@ -10,16 +10,16 @@ export const Container = styled.View`
 
 export const Top = styled.View`
   height: 20%;
-  /* background-color: red; */
+
   padding-top: 10px;
-  align-items: flex-start;
 `;
 
 export const TopContent = styled.View`
   width: 100%;
-  /* background-color: green; */
+
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export const Mid = styled.View`
@@ -32,7 +32,6 @@ export const Mid = styled.View`
 export const Logo = styled.Image`
   height: 30px;
   width: 30px;
-  align-self: flex-end;
   margin-right: 20px;
 `;
 
@@ -49,9 +48,16 @@ export const CloseButton = styled.TouchableOpacity`
   width: 30px;
   border-radius: 50px;
   background-color: ${buttonBg};
+
   justify-content: center;
   align-items: center;
   margin-left: 20px;
+`;
+
+export const LeftSide = styled.View`
+  flex-direction: row;
+
+  align-items: center;
 `;
 
 export const TextContainer = styled.View``;

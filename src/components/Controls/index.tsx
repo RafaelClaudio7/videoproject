@@ -5,6 +5,7 @@ import {
   Container,
   Description,
   ExpandButton,
+  LeftSide,
   Logo,
   Mid,
   PlayButton,
@@ -39,17 +40,19 @@ const Controls = ({
   return (
     <Container>
       <Top>
-        <Logo source={require('../../assets/yt.png')} />
         <TopContent>
-          <CloseButton onPress={onClose}>
-            <X size={20} color={'white'} />
-          </CloseButton>
-          {isFullScreen ? (
-            <TextContainer>
-              <Title>{title}</Title>
-              <Description>{description + ' - ' + info}</Description>
-            </TextContainer>
-          ) : null}
+          <LeftSide>
+            <CloseButton onPress={onClose}>
+              <X size={20} color={'white'} />
+            </CloseButton>
+            {isFullScreen ? (
+              <TextContainer>
+                <Title>{title}</Title>
+                <Description>{description + ' - ' + info}</Description>
+              </TextContainer>
+            ) : null}
+          </LeftSide>
+          <Logo source={require('../../assets/yt.png')} />
         </TopContent>
       </Top>
       <Mid>
